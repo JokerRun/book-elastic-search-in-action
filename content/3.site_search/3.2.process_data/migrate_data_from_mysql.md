@@ -10,7 +10,7 @@ draft: false
 首先，是 Logstash 的下载安装，打开网址：
 [https://www.elastic.co/downloads/logstash](https://www.elastic.co/downloads/logstash)，选择 Zip 包下载，同样和 Elasticsearch 一样需要 Java 环境。
 
-![](/media/15291474087616/15295022225057.jpg)
+![](../../../static/media/15291474087616/15295022225057.jpg)
 
 下载并解压 Logstash 到目录：/Users/medcl/Downloads/6.3.0/logstash-6.3.0
 
@@ -18,11 +18,11 @@ draft: false
 根据这个页面：[https://dev.mysql.com/doc/connector-j/5.1/en/connector-j-versions.html](https://dev.mysql.com/doc/connector-j/5.1/en/connector-j-versions.html)里面的 Connector 和 MySQL 的版本对照关系，
 我们打开网址：[https://downloads.mysql.com/archives/c-j/](https://downloads.mysql.com/archives/c-j/)，选择产品版本 5.1.45，点击 zip 包下载链接即可开始下载。
 
-![](/media/15291474087616/15295024508299.jpg)
+![](../../../static/media/15291474087616/15295024508299.jpg)
 
 解压 Connector 到目录：/Users/medcl/Downloads/mysql-connector-java-5.1.45，文件：mysql-connector-java-5.1.45-bin.jar 就是我们后面要给 Logstash 来使用的 JDBC 驱动，完整的路径就是：`/Users/medcl/Downloads/mysql-connector-java-5.1.45/mysql-connector-java-5.1.45-bin.jar`
 
-![](/media/15291474087616/15295026994699.jpg)
+![](../../../static/media/15291474087616/15295026994699.jpg)
 
 接下来，开始使用 Logstash 来连接 MySQL 数据库，切换到 Logstash 所在目录：/Users/medcl/Downloads/6.3.0/logstash-6.3.0，我们在这个目录创建一个 Logstash 的配置文件：jdbc.conf，文件内容如下：
 
@@ -63,16 +63,16 @@ output {
 
 程序正常运行输出很多信息，且自动退出，如下图：
 
-![](/media/15291474087616/15295066370428.jpg)
+![](../../../static/media/15291474087616/15295066370428.jpg)
 
 
 我们打开 Kibana 查看一下索引:
 
-![](/media/15291474087616/15295065252883.jpg)
+![](../../../static/media/15291474087616/15295065252883.jpg)
 
 果然看到有数据导入到 forum-mysql 这个索引里面了，且看到 Total 显示共有 90 条记录，和 MySQL 里面的文章总数一致，再执行一下上一节测试用的搜索语句:
 
-![](/media/15291474087616/15295067664174.jpg)
+![](../../../static/media/15291474087616/15295067664174.jpg)
 
 可以找到数据库里面的对应的文章记录，简直完美！
 

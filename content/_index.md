@@ -19,7 +19,7 @@ title: "Elastic 搜索开发实战"
 <a class="github-button" href="https://github.com/medcl/book-elastic-search-in-action" data-size="large" data-show-count="true" aria-label="Star medcl/book-elastic-search-in-action on GitHub">关注本书</a>
 
 本书二维码：
-![qrcode](media/15285119242583/qr.png)
+![qrcode](../static/media/15285119242583/qr.png)
 
 本书作者：Medcl
 
